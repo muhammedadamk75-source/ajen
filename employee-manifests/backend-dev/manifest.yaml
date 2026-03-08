@@ -1,0 +1,36 @@
+apiVersion: ajen.dev/v1
+kind: EmployeeManifest
+
+metadata:
+  id: "backend-dev"
+  name: "Backend Developer"
+  version: "1.0.0"
+  description: "Specializes in APIs, databases, and server-side development"
+  author: "Yash Chudasama"
+  tags: ["engineering", "backend", "api"]
+
+spec:
+  role: "backend_dev"
+  tier: "worker"
+
+  model:
+    provider: "anthropic"
+    model: "claude-haiku-4-5-20251001"
+    temperature: 0.7
+    maxTokens: 4096
+
+  persona: "./PERSONA.md"
+
+  tools:
+    builtin:
+      - "filesystem.read_file"
+      - "filesystem.write_file"
+      - "filesystem.list_directory"
+
+  capabilities:
+    canDelegateWork: false
+    canExecuteShell: true
+    canAccessInternet: false
+    maxConcurrentTasks: 3
+
+  reportsTo: ["cto"]

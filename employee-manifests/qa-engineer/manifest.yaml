@@ -1,0 +1,36 @@
+apiVersion: ajen.dev/v1
+kind: EmployeeManifest
+
+metadata:
+  id: "qa-engineer"
+  name: "QA Engineer"
+  version: "1.0.0"
+  description: "Writes tests, finds bugs, and ensures code quality"
+  author: "Yash Chudasama"
+  tags: ["engineering", "testing", "quality"]
+
+spec:
+  role: "qa_engineer"
+  tier: "worker"
+
+  model:
+    provider: "anthropic"
+    model: "claude-haiku-4-5-20251001"
+    temperature: 0.5
+    maxTokens: 4096
+
+  persona: "./PERSONA.md"
+
+  tools:
+    builtin:
+      - "filesystem.read_file"
+      - "filesystem.write_file"
+      - "filesystem.list_directory"
+
+  capabilities:
+    canDelegateWork: false
+    canExecuteShell: true
+    canAccessInternet: false
+    maxConcurrentTasks: 3
+
+  reportsTo: ["cto"]

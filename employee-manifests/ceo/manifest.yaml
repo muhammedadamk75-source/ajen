@@ -1,0 +1,37 @@
+apiVersion: ajen.dev/v1
+kind: EmployeeManifest
+
+metadata:
+  id: "ceo"
+  name: "Chief Executive Officer"
+  version: "1.0.0"
+  description: "Sets strategy, makes high-level decisions, and coordinates the team"
+  author: "Yash Chudasama"
+  tags: ["leadership", "strategy", "executive"]
+
+spec:
+  role: "ceo"
+  tier: "executive"
+
+  model:
+    provider: "anthropic"
+    model: "claude-sonnet-4-20250514"
+    temperature: 0.7
+    maxTokens: 4096
+
+  persona: "./PERSONA.md"
+
+  tools:
+    builtin:
+      - "filesystem.read_file"
+      - "filesystem.write_file"
+      - "filesystem.list_directory"
+
+  capabilities:
+    canDelegateWork: true
+    canExecuteShell: false
+    canAccessInternet: false
+    maxConcurrentTasks: 3
+
+  budget:
+    maxCostCentsPerTask: 100

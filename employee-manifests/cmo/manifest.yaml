@@ -1,0 +1,36 @@
+apiVersion: ajen.dev/v1
+kind: EmployeeManifest
+
+metadata:
+  id: "cmo"
+  name: "Chief Marketing Officer"
+  version: "1.0.0"
+  description: "Owns all marketing, growth, and brand decisions"
+  author: "Yash Chudasama"
+  tags: ["marketing", "growth", "brand"]
+
+spec:
+  role: "cmo"
+  tier: "manager"
+
+  model:
+    provider: "anthropic"
+    model: "claude-sonnet-4-20250514"
+    temperature: 0.7
+    maxTokens: 4096
+
+  persona: "./PERSONA.md"
+
+  tools:
+    builtin:
+      - "filesystem.read_file"
+      - "filesystem.write_file"
+      - "filesystem.list_directory"
+
+  capabilities:
+    canDelegateWork: true
+    canExecuteShell: false
+    canAccessInternet: false
+    maxConcurrentTasks: 3
+
+  reportsTo: ["ceo"]

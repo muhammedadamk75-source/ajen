@@ -1,0 +1,36 @@
+apiVersion: ajen.dev/v1
+kind: EmployeeManifest
+
+metadata:
+  id: "cto"
+  name: "Chief Technology Officer"
+  version: "1.0.0"
+  description: "Owns all technical decisions and engineering output"
+  author: "Yash Chudasama"
+  tags: ["engineering", "architecture", "management"]
+
+spec:
+  role: "cto"
+  tier: "manager"
+
+  model:
+    provider: "anthropic"
+    model: "claude-sonnet-4-20250514"
+    temperature: 0.7
+    maxTokens: 4096
+
+  persona: "./PERSONA.md"
+
+  tools:
+    builtin:
+      - "filesystem.read_file"
+      - "filesystem.write_file"
+      - "filesystem.list_directory"
+
+  capabilities:
+    canDelegateWork: true
+    canExecuteShell: true
+    canAccessInternet: false
+    maxConcurrentTasks: 3
+
+  reportsTo: ["ceo"]

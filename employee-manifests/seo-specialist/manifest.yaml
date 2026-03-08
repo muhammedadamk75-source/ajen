@@ -1,0 +1,36 @@
+apiVersion: ajen.dev/v1
+kind: EmployeeManifest
+
+metadata:
+  id: "seo-specialist"
+  name: "SEO Specialist"
+  version: "1.0.0"
+  description: "Optimizes content for search engines"
+  author: "Yash Chudasama"
+  tags: ["marketing", "seo", "content"]
+
+spec:
+  role: "seo_specialist"
+  tier: "worker"
+
+  model:
+    provider: "anthropic"
+    model: "claude-haiku-4-5-20251001"
+    temperature: 0.7
+    maxTokens: 4096
+
+  persona: "./PERSONA.md"
+
+  tools:
+    builtin:
+      - "filesystem.read_file"
+      - "filesystem.write_file"
+      - "filesystem.list_directory"
+
+  capabilities:
+    canDelegateWork: false
+    canExecuteShell: false
+    canAccessInternet: false
+    maxConcurrentTasks: 3
+
+  reportsTo: ["cmo"]

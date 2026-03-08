@@ -1,0 +1,36 @@
+apiVersion: ajen.dev/v1
+kind: EmployeeManifest
+
+metadata:
+  id: "data-analyst"
+  name: "Data Analyst"
+  version: "1.0.0"
+  description: "Analyzes data and provides insights"
+  author: "Yash Chudasama"
+  tags: ["analytics", "data", "reporting"]
+
+spec:
+  role: "data_analyst"
+  tier: "worker"
+
+  model:
+    provider: "anthropic"
+    model: "claude-haiku-4-5-20251001"
+    temperature: 0.5
+    maxTokens: 4096
+
+  persona: "./PERSONA.md"
+
+  tools:
+    builtin:
+      - "filesystem.read_file"
+      - "filesystem.write_file"
+      - "filesystem.list_directory"
+
+  capabilities:
+    canDelegateWork: false
+    canExecuteShell: false
+    canAccessInternet: false
+    maxConcurrentTasks: 3
+
+  reportsTo: ["coo"]

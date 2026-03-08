@@ -1,0 +1,36 @@
+apiVersion: ajen.dev/v1
+kind: EmployeeManifest
+
+metadata:
+  id: "social-media"
+  name: "Social Media Manager"
+  version: "1.0.0"
+  description: "Creates social media content and builds brand presence"
+  author: "Yash Chudasama"
+  tags: ["marketing", "social", "content"]
+
+spec:
+  role: "social_media"
+  tier: "worker"
+
+  model:
+    provider: "anthropic"
+    model: "claude-haiku-4-5-20251001"
+    temperature: 0.8
+    maxTokens: 4096
+
+  persona: "./PERSONA.md"
+
+  tools:
+    builtin:
+      - "filesystem.read_file"
+      - "filesystem.write_file"
+      - "filesystem.list_directory"
+
+  capabilities:
+    canDelegateWork: false
+    canExecuteShell: false
+    canAccessInternet: false
+    maxConcurrentTasks: 3
+
+  reportsTo: ["cmo"]
