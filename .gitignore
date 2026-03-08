@@ -1,0 +1,14 @@
+# Rust
+/target/
+
+# Environment
+.env
+.env.local
+
+# Workspaces (AI-generated code)
+/workspaces/
+
+# IDE
+.idea/
+.vscode/
+*.swp
