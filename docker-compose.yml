@@ -1,0 +1,16 @@
+services:
+  ajen:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+      RUST_LOG: info
+    volumes:
+      - ./employee-manifests:/app/employee-manifests
+      - workspaces:/app/workspaces
+
+volumes:
+  workspaces:

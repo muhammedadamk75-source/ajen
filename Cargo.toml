@@ -1,0 +1,44 @@
+[workspace]
+members = [
+    "crates/ajen-core",
+    "crates/ajen-provider",
+    "crates/ajen-tools",
+    "crates/ajen-engine",
+    "crates/ajen-server",
+]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+authors = ["Yash Chudasama"]
+license = "MIT"
+
+[workspace.dependencies]
+# Internal crates
+ajen-core = { path = "crates/ajen-core" }
+ajen-provider = { path = "crates/ajen-provider" }
+ajen-tools = { path = "crates/ajen-tools" }
+ajen-engine = { path = "crates/ajen-engine" }
+
+# Async
+tokio = { version = "1", features = ["full"] }
+
+# Serialization
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+serde_yaml = "0.9"
+
+# HTTP
+axum = { version = "0.8", features = ["ws"] }
+reqwest = { version = "0.12", features = ["json", "stream"] }
+tower-http = { version = "0.6", features = ["cors", "trace", "timeout"] }
+
+# Utils
+chrono = { version = "0.4", features = ["serde"] }
+anyhow = "1"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "json"] }
+uuid = { version = "1", features = ["v4"] }
+dotenvy = "0.15"
+async-trait = "0.1"
