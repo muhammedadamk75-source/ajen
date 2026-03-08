@@ -252,6 +252,21 @@ See [open issues](https://github.com/ajenhq/ajen/issues) for things to work on.
 
 ---
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/image?repos=ajenhq/ajen&type=date&legend=top-left)](https://www.star-history.com/?repos=ajenhq%2Fajen&type=date&legend=top-left)
+
+---
+
+## Security Notice
+
+Please do not report security vulnerabilities through [GitHub Issues](https://github.com/ajenhq/ajen/issues).
+
+If you discover a vulnerability, report it privately to **[security@ajen.dev](mailto:security@ajen.dev)**.  
+Our security team will review the report and respond as soon as possible.
+
+---
+
 ## License
 
 MIT — see [LICENSE](LICENSE) for details.
